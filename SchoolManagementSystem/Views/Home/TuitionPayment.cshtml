@@ -2,24 +2,28 @@
     ViewData["Title"] = "Tuition Payment";
 }
 
-<h2>Tuition Payment</h2>
-
-<form id="studentForm" method="get" action="/AccountSummary/TuitionBilling">
-    <div>
-        <label for="studentId">Enter your Student ID:</label>
-        <input type="text" id="studentId" name="studentId" placeholder="e.g., 12345" required />
-    </div>
-    <div>
-        <label for="lastName">Enter your Last Name:</label>
-        <input type="text" id="lastName" placeholder="e.g., Doe" required />
-    </div>
-    <div>
-        <label for="firstName">Enter your First Name:</label>
-        <input type="text" id="firstName" placeholder="e.g., John" required />
-    </div>
-    <div>
-        <label for="middleName">Enter your Middle Name:</label>
-        <input type="text" id="middleName" placeholder="e.g., Amazing" required />
-    </div>
-    <button type="submit">Proceed</button>
-</form>
+<div class="container mt-4">
+    <h2 class="text-center mb-3">Tuition Payment</h2>
+    <p class="text-center">Please fill in your details below to proceed with the payment.</p>
+    <form id="studentForm" method="get" action="/AccountSummary/TuitionBilling" class="p-4 shadow-sm rounded" style="background-color: #fff;">
+        <div class="form-group mb-3">
+            <label for="studentId" class="fw-bold">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" class="form-control" placeholder="e.g., 12345" required />
+        </div>
+        <div class="form-group mb-3">
+            <label for="lastName" class="fw-bold">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="e.g., Doe" required />
+        </div>
+        <div class="form-group mb-3">
+            <label for="firstName" class="fw-bold">First Name:</label>
+            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="e.g., John" required />
+        </div>
+        <div class="form-group mb-3">
+            <label for="middleName" class="fw-bold">Middle Name:</label>
+            <input type="text" id="middleName" name="middleName" class="form-control" placeholder="e.g., Amazing" required />
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-warning px-4">Proceed</button>
+        </div>
+    </form>
+</div>
