@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Tuition Payment";
+}
+
+<h2>Tuition Payment</h2>
+
+<form id="studentForm" method="get" action="/AccountSummary/TuitionBilling">
+    <div>
+        <label for="studentId">Enter your Student ID:</label>
+        <input type="text" id="studentId" name="studentId" placeholder="e.g., 12345" required />
+    </div>
+    <div>
+        <label for="lastName">Enter your Last Name:</label>
+        <input type="text" id="lastName" placeholder="e.g., Doe" required />
+    </div>
+    <div>
+        <label for="firstName">Enter your First Name:</label>
+        <input type="text" id="firstName" placeholder="e.g., John" required />
+    </div>
+    <div>
+        <label for="middleName">Enter your Middle Name:</label>
+        <input type="text" id="middleName" placeholder="e.g., Amazing" required />
+    </div>
+    <button type="submit">Proceed</button>
+</form>
